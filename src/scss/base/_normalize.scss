@@ -1,0 +1,17 @@
+﻿@import '../vendor/normalize-scss/variables';
+@import '../vendor/normalize-scss/vertical-rhythm';
+@import '../vendor/normalize-scss/normalize-mixin';
+@include normalize();
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+}

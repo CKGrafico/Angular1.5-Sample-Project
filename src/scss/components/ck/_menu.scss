@@ -1,0 +1,25 @@
+﻿
+@import '../../base/variables';
+
+.ck-menu {
+    $icon-size: 1.5em;
+
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    user-select: none;
+    width: 0;
+    z-index: 100;
+
+    &-content {
+        background: $color-background-dark;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all $animation-speed-default;
+        width: $size-menu;
+        z-index: 100;
+    }
+}

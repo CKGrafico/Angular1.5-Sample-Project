@@ -1,0 +1,45 @@
+﻿@import '../../base/variables';
+
+.ck-header {
+    $padding: 15px;
+    background: $color-background-light;
+    box-shadow: 0 -3px 20px -1px rgba($color-background-dark, .75);
+    display: block;
+    height: $size-header;
+    margin-left: $padding-menu-wrapper;
+    padding: 0 $padding;
+    position: relative;
+    user-select: none;
+    width: calc(100% - #{$padding-menu-wrapper});
+
+    @media screen and (max-width: $media-screen-max-tablet) {
+        padding-left: $padding-containers;
+    }
+    @media screen and (max-width: $media-breakpoint-menu) {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    &-left,
+    &-right {
+        float: left;
+        height: 100%;
+
+        > div {
+            display: inline-block;
+            height: 100%;
+            line-height: $size-header;
+            vertical-align: middle;
+        }
+    }
+
+    &-left {
+        @media #{$for-tablet} {
+            text-align: right;
+        }
+    }
+
+    &-right {
+        float: right;
+    }
+}

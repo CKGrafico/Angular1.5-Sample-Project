@@ -1,0 +1,56 @@
+﻿// Colors
+// Structure for colors:
+// $color-name
+// $color-name-semidark
+// $color-name-dark
+// $color-name-darker
+// $color-name-semilight
+// $color-name-light
+// $color-name-lighter
+
+$color-brand: #9D50BB;
+$color-brand-dark: #7A46AE;
+$color-brand-darker: #6E48AA;
+$color-secondary: #00AEEF;
+$color-secondary-dark: #007AC2;
+
+$color-background-dark: #303030;
+$color-background-darker: #2C2C2C;
+
+$color-background-semilight: #F2F2F2;
+$color-background-light: #FFF;
+
+$color-foreground-dark: #303030;
+
+$color-foreground-semilight: #9A9A9A;
+$color-foreground-light: #FFF;
+
+$color-error: #E74C3C;
+$color-success: #2ECC71;
+
+$color-borders: #D6D6D6;
+$color-grid-color: #7A7A7A;
+
+// Sizes
+$size-menu: 270px;
+$size-header: 80px;
+
+// Paddings
+$padding-containers: 30px;
+$padding-menu-wrapper: $size-menu;
+//$padding-menu-wrapper: $size-menu + $padding-containers;
+
+// Animations
+$animation-speed-default: .35s;
+$animation-speed-fast: .15s;
+
+// Medias
+$media-screen-max-tablet: 768px;
+$media-breakpoint-menu: 992px;
+$media-screen-min-desktop: 992px;
+
+
+/*Media queries*/
+
+$for-tablet: 'screen and (max-width: #{$media-breakpoint-menu})';
+$for-desktop: 'screen and (min-width: #{$media-screen-min-desktop})';

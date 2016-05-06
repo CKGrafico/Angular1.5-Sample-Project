@@ -1,0 +1,25 @@
+﻿
+@import 'variables';
+
+html,
+body {
+    background: $color-background-semilight;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-width: $media-screen-max-tablet - 20px;
+    overflow-y: auto;
+}
+
+.content {
+    padding-left: $padding-menu-wrapper;
+
+    @media screen and (max-width: $media-breakpoint-menu) {
+        padding-left: 0;
+    }
+}

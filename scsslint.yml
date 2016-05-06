@@ -1,0 +1,54 @@
+# options 0 = pass, 1 = warning, 2 = error, https://github.com/sasstools/sass-lint/tree/master/docs/rules
+options:
+  formatter: stylish
+  merge-default-rules: false
+rules:
+  class-name-format:
+    - 2
+    - convention: ^[\-_a-z0-9]+$
+    - convention-explanation: 'Class must contain only lowercase letters, numbers and dashes'
+  empty-line-between-blocks:
+    - 2
+    - allow-single-line-rulesets: false
+  final-newline:
+    - 2
+    - include: true
+  hex-notation:
+    - 2
+    - style: uppercase
+  indentation:
+    - 2
+    - size: 4
+  leading-zero:
+      - 2
+      - include: false
+  nesting-depth:
+    - 2
+    - max-depth: 4
+  no-duplicate-properties: 2
+  no-color-keywords: 2
+  no-color-literals:
+    - 2
+    - allow-rgba: true
+  no-important: 0
+  no-ids: 2
+  no-qualifying-elements: 0
+  no-trailing-whitespace: 2
+  no-vendor-prefixes: 2
+  property-sort-order:
+    - 2
+    - order: alphabetical
+  quotes:
+    - 2
+    - mode: single
+  single-line-per-selector: 2
+  space-after-colon:
+    - 2
+    - include: true
+  space-after-comma:
+    - 2
+    - include: true
+  space-before-brace:
+    - 2
+    - include: true
+  zero-unit: 2
