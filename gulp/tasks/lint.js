@@ -3,9 +3,8 @@
 var eslint = require('gulp-eslint');
 var sassLint = require('gulp-sass-lint');
 var todo = require('gulp-todo');
-var paths = require('../paths');
 
-module.exports = function (gulp) {
+module.exports = function (gulp, paths) {
 
     gulp.task('lint:js', function () {
         return gulp.src(paths.debug.js.src.files)

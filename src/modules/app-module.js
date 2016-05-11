@@ -7,7 +7,8 @@
         
         // App
         'app.templates',
-        'app.core'
+        'app.core',
+        'app.debtors'
     ]);
 
 })(this, angular);

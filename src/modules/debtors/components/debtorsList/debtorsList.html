@@ -1,0 +1,7 @@
+<ul>
+    <li ng-repeat="item in $ctrl.list">
+        <a ui-sref="app.debtors-edit({id: $index})">{{item.name}} - {{item.debt}}</a>
+    </li>
+</ul>
+
+<a ui-sref="app.debtors-add">Add more</a>

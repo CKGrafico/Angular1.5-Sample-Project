@@ -1,9 +1,8 @@
 ﻿'use strict';
 
 var webserver = require('gulp-webserver');
-var paths = require('../paths');
 
-module.exports = function (gulp) {
+module.exports = function (gulp, paths) {
 
     gulp.task('server', function (done) {
         return gulp.src('./')

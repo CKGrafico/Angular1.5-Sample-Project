@@ -1,0 +1,16 @@
+@import '../../base/variables';
+
+.ck-debtors_form {
+    &-input {
+        display: block;
+        margin: 10px;
+    }
+
+    &-button {
+        margin: 20px;
+
+        &:disabled {
+            opacity: .5;
+        }
+    }
+}

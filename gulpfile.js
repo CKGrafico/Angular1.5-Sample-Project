@@ -23,7 +23,7 @@ gulp.task('debug', function () {
                 'lint:js',
                 'lint:scss',
                 'lint:todos',
-                'test');
+                'test:unit');
 });
 
 gulp.task('release', function() {
@@ -33,7 +33,7 @@ gulp.task('release', function() {
                 'app:debug:scss',
                 'app:debug:tpls',
                 'app:debug:copy',
-                'test',
+                'test:unit',
                 'libs:release:js',
                 'app:release:js',
                 'app:release:scss',
@@ -53,7 +53,7 @@ gulp.task('dev', function() {
                 'lint:js',
                 'lint:scss',
                 'lint:todos',
-                'test', 
+                'test:unit', 
                 'server',
                 'app:watch');
 });

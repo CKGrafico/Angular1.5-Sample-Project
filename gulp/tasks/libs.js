@@ -3,9 +3,8 @@
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
-var paths = require('../paths');
 
-module.exports = function (gulp) {
+module.exports = function (gulp, paths) {
 
     gulp.task('libs:debug:js', function() {
         return gulp.src(paths.libs.js)

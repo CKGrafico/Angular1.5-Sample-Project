@@ -93,7 +93,9 @@ module.exports = {
             }
         },
 
-        specs: [roots.src + '/tests/**/*.specs.js'],
+        specs: [roots.src + '/tests/**/*.spec.js'],
+        
+        specs_e2e: [roots.src + '/tests_e2e/**/*.spec.js'],
 
         templates: {
             app: {

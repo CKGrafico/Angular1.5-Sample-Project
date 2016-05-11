@@ -1,0 +1,31 @@
+<form  class="ck-debtors_form" 
+        name="form" 
+        ng-submit="$ctrl.onSubmit(form)">
+        
+    <input type="text"
+            class="ck-debtors_form-input"
+            name="name"
+            ng-model="$ctrl.form.name"
+            required/>
+            
+    <input type="number"
+            class="ck-debtors_form-input"
+            name="debt"
+            ng-model="$ctrl.form.debt"
+            required/>
+            
+    <button ng-if="!$ctrl.formData"
+            type="submit"
+            class="ck-debtors_form-button"
+            ng-disabled="form.$invalid">
+            Add
+    </button>
+    
+    <button ng-if="$ctrl.formData"
+            type="button"
+            class="ck-debtors_form-button"
+            ng-disabled="form.$invalid"
+            ng-click="$ctrl.onEdit(form)">
+            Edit
+    </button>
+</form>
