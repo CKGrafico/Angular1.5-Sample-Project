@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26.67% </span>
+        <span class="strong">73.33% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/15</span>
+        <span class='fraction'>11/15</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -30,18 +30,18 @@
         <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">12.5% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/8</span>
+        <span class='fraction'>4/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">26.67% </span>
+        <span class="strong">73.33% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/15</span>
+        <span class='fraction'>11/15</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -107,27 +107,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -153,28 +153,28 @@
         { name: 'Andrea',   debt: 98 }
     ];
 &nbsp;
-<span class="fstat-no" title="function not covered" >    function dataApiService($q) {</span>
-<span class="cstat-no" title="statement not covered" >        this.get = <span class="fstat-no" title="function not covered" >function () {</span></span>
-<span class="cstat-no" title="statement not covered" >            return $q(<span class="fstat-no" title="function not covered" >function(resolve) {</span></span>
-<span class="cstat-no" title="statement not covered" >                resolve(JSON.parse(JSON.stringify(data)));</span>
+    function dataApiService($q) {
+        this.get = function () {
+            return $q(function(resolve) {
+                resolve(JSON.parse(JSON.stringify(data)));
             });
         };
         
-<span class="cstat-no" title="statement not covered" >        this.getItem = <span class="fstat-no" title="function not covered" >function (id) {</span></span>
+        this.getItem = <span class="fstat-no" title="function not covered" >function (id) {</span>
 <span class="cstat-no" title="statement not covered" >            return $q(<span class="fstat-no" title="function not covered" >function(resolve) {</span></span>
 <span class="cstat-no" title="statement not covered" >                resolve(JSON.parse(JSON.stringify({ debtor: data[id], id: id })));</span>
             });
         };
         
-<span class="cstat-no" title="statement not covered" >        this.add = <span class="fstat-no" title="function not covered" >function(debtor) {</span></span>
+        this.add = <span class="fstat-no" title="function not covered" >function(debtor) {</span>
 <span class="cstat-no" title="statement not covered" >            data.push(debtor);</span>
         };
         
-<span class="cstat-no" title="statement not covered" >        this.edit = <span class="fstat-no" title="function not covered" >function(id, debtor) {</span></span>
+        this.edit = <span class="fstat-no" title="function not covered" >function(id, debtor) {</span>
 <span class="cstat-no" title="statement not covered" >            data[id] = debtor;</span>
         };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return {</span>
+        return {
             get: this.get,
             add: this.add,
             getItem: this.getItem,
@@ -190,7 +190,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed May 11 2016 18:15:30 GMT+0200 (Romance Daylight Time)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu May 12 2016 11:21:16 GMT+0200 (Romance Daylight Time)
 </div>
 </div>
 <script src="../../prettify.js"></script>

@@ -5,6 +5,7 @@ module.exports = function (config) {
         urlRoot: 'app',
         frameworks: ['jasmine'],
         browsers: ['PhantomJS'],
+        //browsers: ['Chrome'], // Show better errors
         reporters: [
             'progress',
             'coverage'
