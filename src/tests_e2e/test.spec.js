@@ -1,5 +1,5 @@
-describe('angularjs homepage todo list', function() {
-  it('should add a todo', function() {
+describe('when...', function() {
+  it('should...', function() {
     browser.get('http://localhost:8000/app/#/debtors/');
 
     var todoList = element.all(by.repeater('item in $ctrl.list'));
