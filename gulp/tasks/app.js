@@ -38,7 +38,6 @@ module.exports = function (gulp, paths) {
 
     gulp.task('app:debug:inject', function () {
         var options = {
-            read: false,
             addRootSlash: false,
             relative: true
         };
@@ -47,7 +46,7 @@ module.exports = function (gulp, paths) {
             .pipe(inject(
                 gulp.src([paths.debug.scss.app.files]
                     .concat(paths.debug.js.app.files)
-                    .concat(paths.debug.templates.app.files)),
+                    .concat(paths.debug.templates.app.files), {read: false}),
                 options)
              )
             .pipe(gulp.dest(paths.release.app.folder));
@@ -88,7 +87,6 @@ module.exports = function (gulp, paths) {
     
     gulp.task('app:release:inject', function () {
         var options = {
-            read: false,
             addRootSlash: false,
             relative: true
         };
@@ -96,7 +94,7 @@ module.exports = function (gulp, paths) {
         return gulp.src(paths.debug.index)
             .pipe(inject(
             gulp.src([paths.release.scss]
-                .concat(paths.release.js)),
+                .concat(paths.release.js), {read: false}),
             options))
             .pipe(gulp.dest(paths.release.app.folder));
     });
